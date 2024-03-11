@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+h1 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 50px;
+  color: blue;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+input {
+  padding: 10px;
+  border: 3px solid #262626;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.add {
+  padding: 13px 30px;
+  background-color: #262626;
+  color: #fff;
+  font-family: cursive;
+  border: none;
+  transition: 0.4s;
+}
+
+.add:hover {
+  cursor: pointer;
+  background-color: lightseagreen;
+  color: #262626;
+}
+
+.todo-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.error {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: red;
+}
+
+.font-style {
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.task-done-btn {
+  background-color: rgb(50, 205, 50);
+  font-size: 18px;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+
+.task-done-btn:hover {
+  background-color: rgba(50, 205, 50, 0.8);
+  cursor: pointer;
+}
+
+.task-delete-btn {
+  background-color: rgb(255, 99, 71);
+  font-size: 18px;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+
+.task-delete-btn:hover {
+  background-color: rgba(255, 99, 71, 0.8);
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .main-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  input {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .add {
+    margin: auto;
+  }
+}
